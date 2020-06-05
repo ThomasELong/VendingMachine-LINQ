@@ -19,13 +19,15 @@ namespace Vending
         // Add a new product to the Vending Machine (For stocking machine)
         public void AddProduct(Product newProduct)
         {
-            throw new NotImplementedException();
+            Console.WriteLine("LOOK AT ME");
+            _products.Add(newProduct);
         }
 
         // Remove a product from the Vending Machine (for purchasing a product)
         public void RemoveProduct(Product productToRemove)
         {
-            throw new NotImplementedException();
+            Console.WriteLine("RemoveProduct Function");
+            _products.Remove(productToRemove);
         }
 
         // Get all products ordered by price (lowest on top)
@@ -44,6 +46,7 @@ namespace Vending
         public List<Product> SearchByPrice(double minPrice, double maxPrice)
         {
             throw new NotImplementedException();
+             
         }
 
         // Return a product with a given ID. Return null if not found.
